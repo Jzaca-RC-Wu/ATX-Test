@@ -44,5 +44,6 @@ class CaseStrategy:
 
 
 if __name__ == '__main__':
-    suites = unittest.defaultTestLoader.discover('/Users/linpengcheng/Desktop/Viva_Android_UITest/VivaCut/TestSuite_01_Install/TestCase',pattern='test*.py')
+    # suites = unittest.defaultTestLoader.discover('/Users/linpengcheng/Desktop/Viva_Android_UITest/VivaCut/TestSuite_01_Install/TestCase',pattern='test*.py')
+    suites = unittest.defaultTestLoader.discover('/'.join(os.path.dirname(__file__).split('/')[0:-1]) +'/Demo/TestSuite_demo/TestCase',pattern='test*.py')
     print(suites)

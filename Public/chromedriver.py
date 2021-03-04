@@ -19,7 +19,7 @@ if six.PY3:
     import subprocess
     from urllib.error import URLError
 else:
-    from urllib2 import URLError
+    from urllib.request import URLError
     import subprocess32 as subprocess
 
 
